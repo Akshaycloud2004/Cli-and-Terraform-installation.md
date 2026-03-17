@@ -1,21 +1,21 @@
 1️⃣ Install required packages
-$ sudo apt update
-$ sudo apt install -y gnupg software-properties-common curl
+sudo apt update
+sudo apt install -y gnupg software-properties-common curl
 
 2️⃣ Add HashiCorp GPG key
-$ curl -fsSL https://apt.releases.hashicorp.com/gpg | \
+curl -fsSL https://apt.releases.hashicorp.com/gpg | \
 sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
 
 3️⃣ Add HashiCorp repository
-$ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
 sudo tee /etc/apt/sources.list.d/hashicorp.list
 
 4️⃣ Update again
-$ sudo apt update
+sudo apt update
 
 5️⃣ Install Terraform
-$ sudo apt install terraform -y
+sudo apt install terraform -y
 
 6️⃣ Verify
 
-$ terraform -version
+terraform -version
