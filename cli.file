@@ -1,35 +1,35 @@
 1️⃣ Update repository
 
 Run this first:
-$ sudo apt update
+sudo apt update
 
-Then try installing again:
-$ sudo apt install awscli -y
+#Then try installing again:
+sudo apt install awscli -y
 
 2️⃣ If still not working (Best method – official install of AWS CLI)
 Install using the official zip package.
 
 Step 1 — Download AWS CLI
-$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
 Step 2 — Install unzip
-$ sudo apt install unzip -y
+sudo apt install unzip -y
 
 Step 3 — Extract file
-$ unzip awscliv2.zip
+unzip awscliv2.zip
 
 Step 4 — Install AWS CLI
-$ sudo ./aws/install
+sudo ./aws/install
 
 3️⃣ Verify installation
-$ aws --version
+aws --version
 
 Example output:
 
 aws-cli/2.x.x Python/3.x Linux/x86_64
 
 4️⃣ Configure AWS
-$ aws configure
+aws configure
 
 It will ask:
 
