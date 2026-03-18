@@ -3,9 +3,6 @@
 Run this first:
 sudo apt update
 
-#Then try installing again:
-sudo apt install awscli -y
-
 2️⃣ If still not working (Best method – official install of AWS CLI)
 Install using the official zip package.
 
